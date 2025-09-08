@@ -1,6 +1,8 @@
 const express = require('express');
 const server = express();
 
+const prisma = require('./prisma/prismaClient');
+
 server.get('/', (req, res) => {
   res.send('Server is live and ready to give you the data!');
 });
